@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="DepthFetcher.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="SandboxCore.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="stconsts.h" />
+    <ClInclude Include="stdefine.h" />
+    <ClInclude Include="InfiniteThread.h">
+      <Filter>Addons\InfiniteThread</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulation3DGraphicsItem.h">
+      <Filter>Addons\3d Triangulation Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Painter3DOstream.h">
+      <Filter>Addons\3d Triangulation Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter3D.h">
+      <Filter>Addons\3d Triangulation Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelViewer.h">
+      <Filter>Viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelWidget.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="CTexture.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="PhysicsThread.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SandboxMain.cpp" />
+    <ClCompile Include="DepthFetcher.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="SandboxCore.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="InfiniteThread.cpp">
+      <Filter>Addons\InfiniteThread</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelWidget.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="PhysicsThread.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelViewer.cpp">
+      <Filter>Viewers</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_ModelViewer.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_PhysicsThread.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Viewers">
+      <UniqueIdentifier>{c1616e2c-36a2-4610-80f5-814b55cd1f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tasks">
+      <UniqueIdentifier>{6674f6f9-ca5d-41c2-943a-5d6e9d346b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons">
+      <UniqueIdentifier>{c9813e8c-5004-479c-bd94-a1250ade28d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons\InfiniteThread">
+      <UniqueIdentifier>{c32ffc0f-ab79-4c85-806d-ceb0e9494cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons\3d Triangulation Converter">
+      <UniqueIdentifier>{20f95e66-0914-4481-9b96-a9ccbc809bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Struct">
+      <UniqueIdentifier>{f3513be7-452d-4afb-882d-8e179908a783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{e13faeae-9ec5-4cde-8a85-d3e1ebc96a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8a18da3b-85e4-413d-8bc4-2ad172ec6f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{6453ac23-cabb-4415-9e4b-8605e9d317e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{88b66be9-aa6f-4b61-aef3-3938cea5bf65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{87e48376-5ba6-4d44-9ea3-4597cc767ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{c7a0f280-a441-4761-a41e-c5a150ee138d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shade.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shade.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Grass.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Rocks.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Dirt.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

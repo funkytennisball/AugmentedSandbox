@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D5792D4-D038-4AD9-9A71-EF74671D271D}</ProjectGuid>
+    <RootNamespace>AugmentedSandbox</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(KINECTSDK10_DIR)\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(KINECTSDK10_DIR)\lib\amd64;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>D:\sce140057(He Yang)\FreeImage\Source;D:\sce140057(He Yang)\glm;D:\QT4\include;D:\QT4\include\Qt;D:\sce140057(He Yang)\boost_1_56_0;D:\sce140057(He Yang)\CGAL-4.5\auxiliary\gmp\include;D:\QT4\include\QtGui;D:\QT4\include\QtXml;D:\QT4\include\QtOpenGL;D:\QT4\include\QtCore;D:\sce140057(He Yang)\CGAL-4.5\include;D:\sce140057(He Yang)\libQGLViewer-2.5.3;D:\sce140057(He Yang)\PCL 1.6.0\3rdParty\Eigen\include;D:\sce140057(He Yang)\PCL 180\include;D:\sce140057(He Yang)\flann-1.8.4-src\src\cpp;D:\sce140057(He Yang)\glew-1.11.0\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_THREAD_SUPPORT;QT_XML_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;CGAL_USE_MPFR;CGAL_USE_GMP;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FreeImaged.lib;QGLViewerd2.lib;D:\QT4\lib\QtXmld4.lib;D:\QT4\lib\QtOpenGLd4.lib;D:\QT4\lib\QtGuid4.lib;D:\QT4\lib\QtCored4.lib;Kinect10.lib;CGAL-vc110-mt-gd-4.5.lib;CGAL_Core-vc110-mt-gd-4.5.lib;CGAL_Qt4-vc110-mt-gd-4.5.lib;CGAL_ImageIO-vc110-mt-gd-4.5.lib;boost_thread-vc110-mt-gd-1_56.lib;opengl32.lib;libgmp-10.lib;pcl_common_debug.lib;pcl_filters_debug.lib;pcl_octree_debug.lib;pcl_search_debug.lib;pcl_kdtree_debug.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\sce140057(He Yang)\FreeImage\Dist;D:\sce140057(He Yang)\libQGLViewer-2.5.3\QGLViewer\debug;D:\QT4\lib;D:\sce140057(He Yang)\boost_1_56_0\library;D:\sce140057(He Yang)\CGAL-4.5\lib\lib;D:\sce140057(He Yang)\CGAL-4.5\auxiliary\gmp\lib;D:\sce140057(He Yang)\PCL 180\lib\lib;D:\sce140057(He Yang)\glew-1.11.0\lib\Release\x64</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="DepthFetcher.cpp" />
+    <ClCompile Include="moc_ModelViewer.cpp" />
+    <ClCompile Include="moc_PhysicsThread.cpp" />
+    <ClCompile Include="ModelViewer.cpp">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe "%(FullPath)" -o "%(RootDir)%(Directory)%(Filename).cpp"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling %(Filename).%(Extension) using MOC generating %(RootDir)%(Directory)moc_%(Filename).cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)moc_%(Filename).cpp</Outputs>
+    </ClCompile>
+    <ClCompile Include="InfiniteThread.cpp" />
+    <ClCompile Include="ModelWidget.cpp" />
+    <ClCompile Include="PhysicsThread.cpp" />
+    <ClCompile Include="SandboxCore.cpp" />
+    <ClCompile Include="SandboxMain.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Converter3D.h" />
+    <ClInclude Include="CTexture.h" />
+    <ClInclude Include="DepthFetcher.h" />
+    <ClInclude Include="ModelViewer.h" />
+    <ClInclude Include="InfiniteThread.h" />
+    <ClInclude Include="ModelWidget.h" />
+    <ClInclude Include="Painter3DOstream.h" />
+    <ClInclude Include="PhysicsThread.h" />
+    <ClInclude Include="SandboxCore.h" />
+    <ClInclude Include="stconsts.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stdefine.h" />
+    <ClInclude Include="Triangulation3DGraphicsItem.h" />
+    <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shade.frag" />
+    <None Include="shade.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Dirt.jpg" />
+    <Image Include="Grass.jpg" />
+    <Image Include="Rocks.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
