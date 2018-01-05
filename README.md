@@ -1,5 +1,7 @@
 [![Augmented Sandbox](https://img.youtube.com/vi/R3bPysO-EAI/0.jpg)](https://www.youtube.com/watch?v=R3bPysO-EAI)
 
+[Video Presentation](https://www.youtube.com/watch?v=R3bPysO-EAI)
+
 ## Description
 * Mesh reconstruction from Kinect point cloud feed including noise removal, smoothening and triangulation 
 * Physics/Fluid simulation using modified height field fluid simulation, see [Balint etc](http://www.balintmiklos.com/layered_water.pdf)
